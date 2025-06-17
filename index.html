@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentigo – Student Rentals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0056B3;
+      --orange: #FF7F00;
+      --light: #f9f9f9;
+      --gray: #777;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: #333;
+    }
+
+    header {
+      background: var(--navy);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .cta-button {
+      background: var(--orange);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    .categories {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .categories h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--navy);
+    }
+
+    .category-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .category {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .category span {
+      font-size: 2rem;
+    }
+
+    .category h3 {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: var(--navy);
+    }
+
+    .trust {
+      background: white;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .trust h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--navy);
+    }
+
+    .trust-badges {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      text-align: center;
+    }
+
+    .trust-badge {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 12px;
+    }
+
+    .testimonial {
+      margin-top: 2rem;
+      text-align: center;
+      font-style: italic;
+      color: var(--gray);
+    }
+
+    .waitlist {
+      text-align: center;
+      margin: 2rem auto;
+    }
+
+    .waitlist iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 800px;
+      border: none;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rent Anything from Trusted Locals!</h1>
+    <p>Textbooks • Cycles • Calculators • Party Supplies</p>
+    <button class="cta-button">List Your Item</button>
+  </header>
+
+  <section class="categories">
+    <h2>Explore Categories</h2>
+    <div class="category-grid">
+      <div class="category">
+        <span>🎓</span>
+        <h3>Academics</h3>
+        <p>Textbooks, calculators, lab coats</p>
+      </div>
+      <div class="category">
+        <span>🚲</span>
+        <h3>Daily Use</h3>
+        <p>Cycles, furniture, power banks</p>
+      </div>
+      <div class="category">
+        <span>🎉</span>
+        <h3>Events</h3>
+        <p>Party decor, speakers</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust">
+    <h2>Why Trust Rentigo?</h2>
+    <div class="trust-badges">
+      <div class="trust-badge">
+        <h3>🔒 Verified College IDs Only</h3>
+        <p>Only authenticated students allowed</p>
+      </div>
+      <div class="trust-badge">
+        <h3>💰 Escrow Payments</h3>
+        <p>Funds released after item return</p>
+      </div>
+      <div class="trust-badge">
+        <h3>⭐️ User Ratings</h3>
+        <p>Trusted reviews from fellow renters</p>
+      </div>
+    </div>
+    <p class="testimonial">"Earned ₹1200 in a week renting my books. Super safe & easy!" – Student from DU</p>
+  </section>
+
+  <section class="waitlist">
+    <h2>Join Our Waitlist</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCFUVZaKHlQq0BB8zeO9pNrg7XgTBv-m4yDrpAtx9pqyiZlQ/viewform?embedded=true" allowfullscreen>Loading…</iframe>
+  </section>
+
+  <a href="https://wa.me/9122716245" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    📞
+  </a>
+
+  <footer>
+    © 2025 Rentigo. Made by students, for students.
+  </footer>
+</body>
+</html>
